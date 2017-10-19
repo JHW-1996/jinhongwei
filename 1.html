@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<textarea name="" rows="10" cols="20" id="inp" oninput="a()"></textarea>
+		<input type="button" name="" id="but" value="提交" />
+	</body>
+</html>
+<script type="text/javascript">
+	var inp=document.getElementById('inp');
+	var but=document.getElementById('but');
+	function a(){
+		var num=60;
+		var z=inp.value.length;
+		if(z>=num){
+			but.setAttribute("disabled","disabled")
+//			console.log(z)
+		}else{
+			but.removeAttribute("disabled","disabled")
+		}
+	}
+</script>
